@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mannat Hotel & Family Restaurant</title>
+    <!-- Tailwind CSS for Premium UI -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Floating Animation for 3D Effect */
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .floating-effect {
+            animation: float 6s ease-in-out infinite;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-white font-sans antialiased selection:bg-amber-500 selection:text-black">
+
+    <!-- Background Glows -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Main Hero Section -->
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
+        <div class="absolute top-6 left-6 text-xl font-bold tracking-wider text-amber-500">MANNAT</div>
+        <div class="absolute top-6 right-6 bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm font-semibold border border-green-500/30">
+            <i class="fa-solid fa-circle text-xs mr-2 animate-pulse"></i>Open Daily till 11 PM
+        </div>
+
+        <div class="max-w-4xl mx-auto z-10">
+            <span class="text-amber-500 font-medium tracking-widest text-xs uppercase bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/20">The Ultimate Highway Food Stop</span>
+            <h1 class="text-5xl md:text-7xl font-black mt-6 tracking-tight bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
+                Mannat Hotel &<br><span class="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">Family Restaurant</span>
+            </h1>
+            <p class="mt-6 text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+                Where authentic traditional taste meets modern luxury dining. Enjoy the finest Punjabi & North Indian flavors with your family.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#menu" class="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-black font-bold px-8 py-4 rounded-xl shadow-lg shadow-orange-500/20 transition-all transform hover:-translate-y-1">Explore Menu</a>
+                <a href="tel:9254303022" class="glassmorphism hover:bg-white/10 px-8 py-4 rounded-xl font-semibold transition-all flex items-center gap-2"><i class="fa-solid fa-phone text-amber-500"></i> Call 9254303022</a>
+            </div>
+        </div>
+
+        <!-- 3D Stats Badge -->
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl w-full px-4 z-10">
+            <div class="glassmorphism p-4 rounded-2xl text-center shadow-2xl" data-tilt>
+                <div class="text-amber-500 text-2xl font-bold mb-1"><i class="fa-solid fa-star mr-1"></i> 3.9</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider">508+ Family Reviews</div>
+            </div>
+            <div class="glassmorphism p-4 rounded-2xl text-center shadow-2xl" data-tilt>
+                <div class="text-amber-500 text-2xl font-bold mb-1">₹200–400</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider">Pocket-Friendly Budget</div>
+            </div>
+            <div class="glassmorphism p-4 rounded-2xl text-center shadow-2xl col-span-2 md:col-span-1" data-tilt>
+                <div class="text-amber-500 text-2xl font-bold mb-1"><i class="fa-solid fa-users mr-1"></i> Private</div>
+                <div class="text-xs text-gray-400 uppercase tracking-wider">Dining Rooms Available</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Premium Features Section -->
+    <section class="py-24 px-4 max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-center mb-16 tracking-tight">Our Premium Amenities</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glassmorphism p-8 rounded-3xl transition-all shadow-xl hover:shadow-amber-500/5" data-tilt>
+                <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-500 text-xl mb-6"><i class="fa-solid fa-utensils"></i></div>
+                <h3 class="text-xl font-bold mb-3">All You Can Eat</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Enjoy an unlimited feast of authentic traditional flavors tailored perfectly for large appetites.</p>
+            </div>
+            <div class="glassmorphism p-8 rounded-3xl transition-all shadow-xl hover:shadow-amber-500/5" data-tilt>
+                <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center text-orange-500 text-xl mb-6"><i class="fa-solid fa-clock"></i></div>
+                <h3 class="text-xl font-bold mb-3">Happy-Hour Food</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Special discounts and freshly prepared hot items served during our exclusive daily happy hours.</p>
+            </div>
+            <div class="glassmorphism p-8 rounded-3xl transition-all shadow-xl hover:shadow-amber-500/5" data-tilt>
+                <div class="w-12 h-12 bg-yellow-500/10 rounded-xl flex items-center justify-center text-yellow-500 text-xl mb-6"><i class="fa-solid fa-door-closed"></i></div>
+                <h3 class="text-xl font-bold mb-3">Private Dining Room</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">A peaceful, elegant, and secure dedicated cabin area designed exclusively for premium family gatherings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section id="menu" class="py-24 bg-slate-900/50 border-y border-white/5 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight">Menu Highlights</h2>
+                <p class="text-gray-400 mt-4">Taste our most ordered signature highway dishes</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="glassmorphism p-6 rounded-2xl relative overflow-hidden shadow-xl" data-tilt>
+                    <div class="h-40 bg-gradient-to-br from-amber-500/20 to-orange-600/20 rounded-xl flex items-center justify-center text-5xl text-amber-500 font-bold mb-4 floating-effect">🥞</div>
+                    <h3 class="text-lg font-bold">Special Parantha</h3>
+                    <p class="text-xs text-gray-400 mt-1">Served hot with fresh melting butter</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glassmorphism p-6 rounded-2xl relative overflow-hidden shadow-xl" data-tilt>
+                    <div class="h-40 bg-gradient-to-br from-amber-500/20 to-orange-600/20 rounded-xl flex items-center justify-center text-5xl text-amber-500 font-bold mb-4 floating-effect" style="animation-delay: 1.5s;">🫓</div>
+                    <h3 class="text-lg font-bold">Masala Dosa</h3>
+                    <p class="text-xs text-gray-400 mt-1">Crispy, golden, and packed with spices</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="glassmorphism p-6 rounded-2xl relative overflow-hidden shadow-xl" data-tilt>
+                    <div class="h-40 bg-gradient-to-br from-amber-500/20 to-orange-600/20 rounded-xl flex items-center justify-center text-5xl text-amber-500 font-bold mb-4 floating-effect" style="animation-delay: 3s;">🥪</div>
+                    <h3 class="text-lg font-bold">Grilled Sandwich</h3>
+                    <p class="text-xs text-gray-400 mt-1">Loaded with fresh veggies & premium cheese</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="glassmorphism p-6 rounded-2xl relative overflow-hidden shadow-xl" data-tilt>
+                    <div class="h-40 bg-gradient-to-br from-amber-500/20 to-orange-600/20 rounded-xl flex items-center justify-center text-5xl text-amber-500 font-bold mb-4 floating-effect" style="animation-delay: 4.5s;">🍯</div>
+                    <h3 class="text-lg font-bold">Signature Chatni</h3>
+                    <p class="text-xs text-gray-400 mt-1">Our famous secret spicy traditional dip</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Location Section -->
+    <footer class="py-16 px-4 max-w-4xl mx-auto text-center relative z-10">
+        <div class="glassmorphism p-8 md:p-12 rounded-3xl shadow-2xl" data-tilt>
+            <h2 class="text-2xl md:text-3xl font-extrabold mb-4">Visit Us Today</h2>
+            <p class="text-gray-400 max-w-md mx-auto text-sm leading-relaxed mb-6">
+                6Q4M+9J7, Alamgirpur, Dharuhera, Haryana 123106
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://maps.google.com/?q=Mannat+Hotel+Dharuhera" target="_blank" class="bg-white text-black font-bold px-6 py-3.5 rounded-xl transition-all transform hover:-translate-y-1 inline-flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-location-dot"></i> Get Directions
+                </a>
+                <a href="tel:9254303022" class="bg-amber-500/10 text-amber-400 border border-amber-500/20 font-bold px-6 py-3.5 rounded-xl hover:bg-amber-500/20 transition-all inline-flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call: 9254303022
+                </a>
+            </div>
+        </div>
+        <p class="mt-12 text-xs text-gray-600">&copy; 2026 Mannat Hotel & Family Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Vanilla-Tilt Script for 3D Hover Effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script>
+        // Initializing 3D tilt effect on elements with 'data-tilt'
+        VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+            max: 12,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.15,
+        });
+    </script>
+</body>
+</html>
